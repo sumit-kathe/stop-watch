@@ -5,7 +5,7 @@ const Watch = () => {
     let date =  Date();
     // let seconds = date.getSeconds()
 
-    const[second,setSecond]= useState(date);
+    const[second,setSecond]= useState(0);
     const[minute,setMinute]= useState(59);
     const[Hours,setHours]= useState(5);
     let secondTime = useRef();
