@@ -1,0 +1,19 @@
+.Cal {
+
+   border : 1px solid black;
+   height : 300px;
+   width : 250px;
+   margin : 50px;
+   padding : 5px;
+   border-radius : 5px;
+   background-color: black;
+
+}
+.Cal-input{
+
+   width: 90%;
+   height: 23px;
+   padding: 10px;
+   border-radius : 7px;
+
+}

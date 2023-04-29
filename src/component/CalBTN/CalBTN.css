@@ -1,0 +1,12 @@
+.CalBTN{
+
+    height: 44px;
+    width: 57px;
+    margin: 2px;
+    padding: 3px;
+    background-color: rgb(7, 0, 0);
+    color: white;
+    border-radius: 50%;
+    
+    
+}
