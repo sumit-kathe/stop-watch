@@ -1,14 +1,17 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useRef} from 'react';
+import './watch.css';
 
 const Watch = () => {
     
-    let date =  Date();
+    let date = <p>Todays Date & current Time  -- { Date()}</p>
     // let seconds = date.getSeconds()
 
     const[second,setSecond]= useState(0);
     const[minute,setMinute]= useState(59);
     const[Hours,setHours]= useState(5);
+
     let secondTime = useRef();
+
     const secondFun =() =>{
         console.log('onclick clicked')
         secondTime.current = setInterval(()=>{setSecond((prevState)=> prevState + 1)},1000)
@@ -37,13 +40,23 @@ const Watch = () => {
   }
 
   return (
-    <div className="container">
-         {Hours} : {minute} : {second}
-         <button className="btn btn-primary" onClick={secondFun}> Start </button>
-         <button className="btn btn-warning" onClick={resetFun}> Reset </button>
-         <button className="btn btn-success" onClick={pauseFun}> Stop </button>
-         <br></br><br></br>
+    <div className="contain">
          {date}
+       
+        <div className='borderee'>
+         {Hours} : {minute} : {second}
+         </div>
+         <div className="miandiv">
+
+        <div> <button className="btn btn-primary" onClick={secondFun}> Start </button> </div> 
+
+        <div> <button className="btn btn-warning" onClick={resetFun}> Reset </button></div>
+        
+        <div> <button className="btn btn-success" onClick={pauseFun}> Stop </button> </div> 
+
+         </div>
+         <br></br>
+
     </div>
   )
 }
