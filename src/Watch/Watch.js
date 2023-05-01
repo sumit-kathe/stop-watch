@@ -3,6 +3,7 @@ import './watch.css';
 
 const Watch = () => {
     
+  //// sumit had made a smmal change 
     let date = <p>Todays Date & current Time  -- { Date()}</p>
     // let seconds = date.getSeconds()
 
